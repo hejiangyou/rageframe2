@@ -57,7 +57,7 @@ class ArticleCateController extends AddonsBaseController
         {
             if ($request->isAjax)
             {
-                Yii::$app->response->format = yii\web\Response::FORMAT_JSON;
+                Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
                 return \yii\widgets\ActiveForm::validate($model);
             }
 
